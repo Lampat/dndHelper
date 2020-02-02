@@ -68,7 +68,6 @@ class Home extends StatelessWidget {
               child: RaisedButton(
                 elevation: 7,
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Padding(
                       padding: EdgeInsets.fromLTRB(8.0,0.0,8.0,0.0),
@@ -87,7 +86,6 @@ class Home extends StatelessWidget {
               child: RaisedButton(
                 elevation: 7,
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Padding(
                       padding: EdgeInsets.fromLTRB(8.0,0.0,8.0,0.0),
@@ -109,7 +107,6 @@ class Home extends StatelessWidget {
               child: RaisedButton(
                 elevation: 7,
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Padding(
                       padding: EdgeInsets.fromLTRB(8.0,0.0,8.0,0.0),
