@@ -1,3 +1,6 @@
+import 'package:dndhelper/screens/feats_screen.dart';
+import 'package:dndhelper/screens/items_screen.dart';
+import 'package:dndhelper/screens/monsters_screen.dart';
 import 'package:flutter/material.dart';
 
 import './screens/home_screen.dart';
@@ -16,6 +19,9 @@ class MyApp extends StatelessWidget {
       home: Home(),
       routes: {
         SpellsScreen.routeName: (ctx)=> SpellsScreen(),
+        FeatsScreen.routeName: (ctx)=> FeatsScreen(),
+        ItemsScreen.routeName: (ctx)=> ItemsScreen(),
+        MonstersScreen.routeName: (ctx)=> MonstersScreen(),
       },
     );
   }

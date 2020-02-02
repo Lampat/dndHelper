@@ -1,3 +1,6 @@
+import 'package:dndhelper/screens/feats_screen.dart';
+import 'package:dndhelper/screens/items_screen.dart';
+import 'package:dndhelper/screens/monsters_screen.dart';
 import 'package:flutter/material.dart';
 
 import './spells_screen.dart';
@@ -32,34 +35,71 @@ class Home extends StatelessWidget {
                 elevation: 7,
                 child: Text('Spells'),
                 color: Colors.purple,
-                onPressed: () => Navigator.of(context).pushNamed(SpellsScreen.routeName),
+                onPressed: () =>
+                    Navigator.of(context).pushNamed(SpellsScreen.routeName),
               ),
             ),
             SizedBox(
               width: 150,
               child: RaisedButton(
                 elevation: 7,
-                child: Text('Feats'),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(8.0,0.0,8.0,0.0),
+                      child: Icon(Icons.card_travel, color: Colors.white),
+                      ),
+                    Text("Feats", style: TextStyle(color: Colors.white))
+                  ],
+                ),
                 color: Colors.green,
-                onPressed: () {},
+                onPressed: () =>
+                    Navigator.of(context).pushNamed(FeatsScreen.routeName),
               ),
             ),
             SizedBox(
               width: 150,
               child: RaisedButton(
                 elevation: 7,
-                child: Text('Items'),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(8.0,0.0,8.0,0.0),
+                      child: Icon(Icons.add_circle, color: Colors.black),
+                    ),
+                    Text(
+                      "Items",
+                      style: TextStyle(color: Colors.black),
+                    )
+                  ],
+                ),
                 color: Colors.yellow,
-                onPressed: () {},
+                onPressed: () =>
+                    Navigator.of(context).pushNamed(ItemsScreen.routeName),
               ),
             ),
             SizedBox(
               width: 150,
               child: RaisedButton(
                 elevation: 7,
-                child: Text('Monsters'),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(8.0,0.0,8.0,0.0),
+                      child: Icon(Icons.adb, color: Colors.white),
+                    ),
+                    Text(
+                      "Monsters",
+                      style: TextStyle(color: Colors.white),
+                    )
+                  ],
+                ),
                 color: Colors.red,
-                onPressed: () {},
+                onPressed: () =>
+                    Navigator.of(context).pushNamed(MonstersScreen.routeName),
               ),
             ),
           ],
