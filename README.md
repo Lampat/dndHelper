@@ -1,8 +1,3 @@
 # dndHelper
 
-Panos desktop change
-
-Panos is gay
-
-Now you should get a conflict...maybe?
-
+A flutter app intended to help dnd players around the world.
